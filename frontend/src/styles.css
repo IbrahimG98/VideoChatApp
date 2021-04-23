@@ -1,5 +1,6 @@
 body
 {
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://i.pinimg.com/originals/3b/b0/47/3bb047dc973685da81f083c172eac747.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
