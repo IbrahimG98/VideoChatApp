@@ -19,8 +19,8 @@ io.on('connection',(socket)=>{
     socket.on('disconnect',()=>{
         socket.broadcast.emit('call ended');
     });
-    socket.on('calluser',({userToCall,signalData,Name,from})=>{
-        io.to(userToCall).emit("calluser",{signal:signalData,Name,from});
+    socket.on('calluser',({userToCall,signalData,name,from})=>{
+        io.to(userToCall).emit("calluser",{signal:signalData,name,from});
 
     });
     socket.on('answercall',(data)=>{
