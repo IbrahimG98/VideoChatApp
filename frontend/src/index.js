@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
+import {ContexProvider} from "./SocketContext";
 import './styles.css';
 
-ReactDOM.render(<App/>,document.getElementById('root'));
+ReactDOM.render(<ContexProvider>
+    <App/>
+</ContexProvider>,document.getElementById('root'));
 
 
